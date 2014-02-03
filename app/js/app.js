@@ -6,6 +6,10 @@ window.ContactManager = {
   start: function(data) {
     var contacts = new ContactManager.Collections.Contacts(data.contacts);
 
-    console.log(contacts);
+    var contactsView = new ContactManager.Views.Contacts({
+      collection: contacts
+    });
+
+    $('.main-container').html(contactsView.render().$el);
   }
 };
