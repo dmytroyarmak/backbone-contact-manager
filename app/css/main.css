@@ -1,0 +1,83 @@
+.bs-header {
+  position: relative;
+  padding: 30px 15px;
+  font-size: 20px;
+  color: #cdbfe3;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  background-color: #6f5499;
+  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
+  background-image: linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+}
+
+.bs-header h1 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.bs-header p {
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.media-object {
+  width: 128px;
+  height: 128px;
+  border-radius: 5px;
+}
+
+.media .thumbnail {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.media-list {
+  text-align: center;
+}
+
+@media (min-width: 450px) {
+  .media-list {
+    text-align: left;
+  }
+
+  .media .thumbnail {
+    float: left;
+    margin-right: 25px;
+  }
+}
+
+.media:first-child {
+  margin-top: 15px;
+}
+
+.btn-outline {
+  color: #563d7c;
+  background-color: transparent;
+  border-color: #563d7c;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+
+a {
+  color: #563d7c;
+}
+
+a:hover,
+a:focus {
+  color: #1d1429;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #563d7c;
+}
