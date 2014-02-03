@@ -57,24 +57,24 @@
     </script>
 
     <script type="text/template" id="tpl-new-contact">
-      <h2 class="page-header text-center">Create Contact</h2>
+      <h2 class="page-header text-center"><%= isNew ? 'Create' : 'Edit' %> Contact</h2>
       <form role="form" class="form-horizontal contract-form">
         <div class="form-group">
           <label class="col-sm-4 control-label">Full name:</label>
           <div class="col-sm-6">
-            <input type="text" class="form-control contact-name-input">
+            <input type="text" class="form-control contact-name-input" value="<%- name %>">
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-4 control-label">Email address:</label>
           <div class="col-sm-6">
-            <input type="email" class="form-control contact-email-input">
+            <input type="email" class="form-control contact-email-input" value="<%- email %>">
           </div>
         </div>
         <div class="form-group">
           <label class="col-sm-4 control-label">Telephone number:</label>
           <div class="col-sm-6">
-            <input type="tel" class="form-control contact-tel-input">
+            <input type="tel" class="form-control contact-tel-input" value="<%- tel %>">
           </div>
         </div>
         <div class="form-group">
