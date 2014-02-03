@@ -1,0 +1,9 @@
+{
+  "name": "backbone-contact-manager",
+  "authors": [
+    "Dmytro Yarmak <dmytroyarmak@gmail.com>"
+  ],
+  "description": "Simple Backbone.js example application",
+  "license": "MIT",
+  "private": true
+}
