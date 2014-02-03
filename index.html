@@ -55,6 +55,38 @@
       <hr>
     </script>
 
+    <script type="text/template" id="tpl-new-contact">
+      <h2 class="page-header text-center">Create Contact</h2>
+      <form role="form" class="form-horizontal contract-form">
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Full name:</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control contact-name-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Email address:</label>
+          <div class="col-sm-6">
+            <input type="email" class="form-control contact-email-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label">Telephone number:</label>
+          <div class="col-sm-6">
+            <input type="tel" class="form-control contact-tel-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-4 col-sm-3">
+            <button type="submit" class="btn btn-outline btn-lg btn-block">Submit</button>
+          </div>
+          <div class="col-sm-3">
+            <a href="#contacts" class="btn btn-outline btn-lg btn-block">Cancel</a>
+          </div>
+        </div>
+      </form>
+    </script>
+
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/underscore/underscore.js"></script>
     <script src="vendor/backbone/backbone.js"></script>
@@ -64,6 +96,7 @@
     <script src="app/js/collections/contacts.js"></script>
     <script src="app/js/views/contact.js"></script>
     <script src="app/js/views/contacts.js"></script>
+    <script src="app/js/views/contactForm.js"></script>
     <script src="app/js/router.js"></script>
 
     <script>
