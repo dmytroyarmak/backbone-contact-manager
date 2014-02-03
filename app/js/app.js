@@ -35,7 +35,18 @@ window.ContactManager = {
     });
 
     router.on('route:editContact', function(id) {
-      console.log('Edit contact');
+      var contact = contacts.get(id),
+          editContactForm;
+
+      if (contact) {
+        editContactForm = new ContactManager.Views.ContactForm({
+            model: contact
+        });
+
+        $('.main-container').html(editContactForm.render().$el);
+      } else {
+        router.navigate('contacts', true);
+      }
     });
 
     Backbone.history.start();
