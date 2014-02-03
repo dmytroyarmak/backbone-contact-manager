@@ -3,7 +3,9 @@ window.ContactManager = {
   Collections: {},
   Views: {},
 
-  start: function() {
-    console.log('Contact Manager started!');
+  start: function(data) {
+    var contacts = new ContactManager.Collections.Contacts(data.contacts);
+
+    console.log(contacts);
   }
 };
