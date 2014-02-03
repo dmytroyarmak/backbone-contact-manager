@@ -11,5 +11,25 @@ window.ContactManager = {
     });
 
     $('.main-container').html(contactsView.render().$el);
+
+    var router = new ContactManager.Router();
+
+    router.on('route:home', function() {
+      console.log('Home');
+    });
+
+    router.on('route:showContacts', function() {
+      console.log('Show contacts');
+    });
+
+    router.on('route:newContact', function() {
+      console.log('New contact');
+    });
+
+    router.on('route:editContact', function(id) {
+      console.log('Edit contact');
+    });
+
+    Backbone.history.start();
   }
 };
