@@ -23,7 +23,9 @@ window.ContactManager = {
     });
 
     router.on('route:newContact', function() {
-      console.log('New contact');
+      var newContactForm = new ContactManager.Views.ContactForm();
+
+      $('.main-container').html(newContactForm.render().$el);
     });
 
     router.on('route:editContact', function(id) {
