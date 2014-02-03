@@ -15,7 +15,10 @@ window.ContactManager = {
     var router = new ContactManager.Router();
 
     router.on('route:home', function() {
-      console.log('Home');
+      router.navigate('contacts', {
+        trigger: true,
+        replace: true
+      });
     });
 
     router.on('route:showContacts', function() {
