@@ -45,6 +45,11 @@ window.ContactManager = {
             model: contact
         });
 
+        editContactForm.on('form:submitted', function(attrs) {
+          contact.set(attrs);
+          router.navigate('contacts', true);
+        });
+
         $('.main-container').html(editContactForm.render().$el);
       } else {
         router.navigate('contacts', true);
