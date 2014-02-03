@@ -4,15 +4,8 @@ window.ContactManager = {
   Views: {},
 
   start: function(data) {
-    var contacts = new ContactManager.Collections.Contacts(data.contacts);
-
-    var contactsView = new ContactManager.Views.Contacts({
-      collection: contacts
-    });
-
-    $('.main-container').html(contactsView.render().$el);
-
-    var router = new ContactManager.Router();
+    var contacts = new ContactManager.Collections.Contacts(data.contacts),
+        router = new ContactManager.Router();
 
     router.on('route:home', function() {
       router.navigate('contacts', {
@@ -22,7 +15,11 @@ window.ContactManager = {
     });
 
     router.on('route:showContacts', function() {
-      console.log('Show contacts');
+      var contactsView = new ContactManager.Views.Contacts({
+        collection: contacts
+      });
+
+      $('.main-container').html(contactsView.render().$el);
     });
 
     router.on('route:newContact', function() {
