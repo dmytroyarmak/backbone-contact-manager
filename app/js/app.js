@@ -1,5 +1,9 @@
 window.ContactManager = {
   Models: {},
   Collections: {},
-  Views: {}
+  Views: {},
+
+  start: function() {
+    console.log('Contact Manager started!');
+  }
 };
