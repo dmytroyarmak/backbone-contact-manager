@@ -23,7 +23,9 @@ window.ContactManager = {
     });
 
     router.on('route:newContact', function() {
-      var newContactForm = new ContactManager.Views.ContactForm();
+      var newContactForm = new ContactManager.Views.ContactForm({
+        model: new ContactManager.Models.Contact()
+      });
 
       newContactForm.on('form:submitted', function(attrs) {
         attrs.id = contacts.isEmpty() ? 1 : (_.max(contacts.pluck('id')) + 1);
