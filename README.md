@@ -9,7 +9,7 @@ http://dmytroyarmak.github.io/backbone-contact-manager
 http://dmytroyarmak.github.io/codeangels-backbone-introduction
 
 ## Tutorial
-- [Step 0 - Initialization project](https://github.com/dmytroyarmak/backbone-contact-manager/releases/tag/step-0)
+- [Step 0 - Initialization of project](https://github.com/dmytroyarmak/backbone-contact-manager/releases/tag/step-0)
 - [Step 1 - Add dependencies](https://github.com/dmytroyarmak/backbone-contact-manager/releases/tag/step-1)
 - [Step 2 - Contact Model](https://github.com/dmytroyarmak/backbone-contact-manager/releases/tag/step-2)
 - [Step 3 - Contacts Collection](https://github.com/dmytroyarmak/backbone-contact-manager/releases/tag/step-3)
