@@ -19,3 +19,7 @@ http://dmytroyarmak.github.io/codeangels-backbone-introduction
 - [Step 7 - Delete contact button](https://github.com/dmytroyarmak/backbone-contact-manager/releases/tag/step-7)
 - [Step 8 - Add new contact](https://github.com/dmytroyarmak/backbone-contact-manager/releases/tag/step-8)
 - [Step 9 - Edit contact page](https://github.com/dmytroyarmak/backbone-contact-manager/releases/tag/step-9)
+
+## Next lesson
+
+https://github.com/dmytroyarmak/marionette-contact-manager
